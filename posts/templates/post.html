@@ -1,0 +1,5 @@
+<h2> Blog </h2>
+
+{% for post in posts %}
+    <h3> <a href="{% url 'single_post' post.id %}"> {{post}} -- {{post.content}} </a> </h3>
+{% endfor %}
