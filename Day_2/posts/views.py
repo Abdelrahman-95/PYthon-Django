@@ -9,5 +9,6 @@ def all_posts(request):
 
 
 
-def single_post():
-    pass
+def single_post(request,id):
+    post = Post.objects.get(id=id)
+    return render(request,'single_post.html',{'single_post':post})
