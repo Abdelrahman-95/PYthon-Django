@@ -21,6 +21,6 @@ from posts.views import single_post
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/',all_posts),name="all_posrs",
-    path('blog/<int:id>',single_post,name="single_post"),
+    path('blog/',all_posts, name ='all_posrs'),
+    path('blog/<int:id>',single_post, name = "single_post"),
 ]

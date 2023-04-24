@@ -1,0 +1,11 @@
+<h2> {{single_post.Title}} </h2>
+
+<p> {{single_post.Content}} </p>
+
+<img src={{single_post.Image.url}}/>
+
+<a href='{% url "edit_post" single_post.id %}'>  Edit Post </a>
+
+{% comment %} <a href="{% url 'new_post' single_post.id %}"> New Post </a> {% endcomment %}
+
+<a href = "{% url 'delete_post' single_post.id %}"> Delete Post</a>
